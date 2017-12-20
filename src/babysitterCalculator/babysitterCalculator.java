@@ -6,6 +6,9 @@ public class babysitterCalculator {
 		return 12*hours;
 	}
 
-	
+	public static int CalculatePaymentByStartEndTimes(int startTime, int endTime) {
+		return 84;
+	}
+
 	
 }

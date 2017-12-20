@@ -21,6 +21,13 @@ class BabySitterCalculatorTests {
 		int expectedDollarsEarned = 24;
 		assertEquals(expectedDollarsEarned, actualDollarsEarned);
 	}
+	
+	@Test
+	void testCalculatePaymentByStartEndTimesReturns84WhenGiven5to12() {
+		int actualDollarsEarned = babysitterCalculator.CalculatePaymentByStartEndTimes(5,12);
+		int expectedDollarsEarned = 84;
+		assertEquals(expectedDollarsEarned, actualDollarsEarned);
+	}
 
 
 }
