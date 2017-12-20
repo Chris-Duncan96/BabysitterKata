@@ -2,14 +2,17 @@ package babysitterCalculator;
 
 public class babysitterCalculator {
 
-	public static int CalculatePaymentByHours(int hours) {
-		return 12*hours;
+	private static int baseRate = 8;
+	private static int afterMidnightBonusRate = 8;
+
+	private static int CalculatePaymentByHoursAndRate(int hours, int rate) {
+		return rate*Math.max(hours, 0);
 	}
 
 	public static int CalculatePaymentByStartEndTimes(int startTime, int endTime) {
 		startTime = addTimeIfPastMidnight(startTime);
 		endTime = addTimeIfPastMidnight(endTime);
-		return CalculatePaymentByHours(endTime-startTime);
+		return CalculatePaymentByHoursAndRate(endTime - startTime, baseRate) + CalculatePaymentByHoursAndRate(endTime - 12, afterMidnightBonusRate);
 	}
 
 	private static int addTimeIfPastMidnight(int time) {
