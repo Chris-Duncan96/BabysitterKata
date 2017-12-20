@@ -1,4 +1,4 @@
-1. Fixed rate hours to dollars ($12/hr)
+1. Fixed rate hours to dollars ($12/hr)  x
 2. Times for start/end at fixed rate
 3. Two rates, before/after midnight
 4. Add Bedtime
