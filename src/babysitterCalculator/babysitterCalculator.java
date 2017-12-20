@@ -14,6 +14,7 @@ public class babysitterCalculator {
 		startTime = addTimeIfPastMidnight(startTime);
 		bedTime = addTimeIfPastMidnight(bedTime);
 		endTime = addTimeIfPastMidnight(endTime);
+		bedTime = Math.min(endTime, bedTime);
 		bedTime = Math.min(12, bedTime);
 		return CalculatePaymentByHoursAndRate(endTime - startTime, baseRate) + CalculatePaymentByHoursAndRate(endTime - 12, afterMidnightBonusRate)
 																			 + CalculatePaymentByHoursAndRate(bedTime - startTime, beforeBedBonusRate);
