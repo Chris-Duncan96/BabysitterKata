@@ -23,6 +23,4 @@ public class babysitterCalculator {
 		if(time < 5) time+=12;
 		return time;
 	}
-
-	
 }

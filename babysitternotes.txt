@@ -1,8 +1,7 @@
 1. Fixed rate hours to dollars ($12/hr)  	x
 2. Times for start/end at fixed rate		x
 3. Two rates, before/after midnight			x
-4. Add Bedtime
-5. 
+4. Add Bedtime								x
 
 
 Notes :	Midnight takes priority over bedtime for price rates
